@@ -24,6 +24,9 @@
     <ClCompile Include="Fondo.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Mira.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\saloonV4.png">
@@ -44,9 +47,15 @@
     <Image Include="Assets\saloonV1.png">
       <Filter>Archivos de recursos\assets</Filter>
     </Image>
+    <Image Include="Assets\mira.png">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fondo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Mira.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

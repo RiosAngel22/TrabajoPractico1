@@ -1,6 +1,4 @@
 #include "Fondo.h"
-#include <SFML/Graphics.hpp>
-#include <iostream>
 
 using namespace sf;
 
@@ -21,4 +19,8 @@ void Fondo::CambiarTextura(int valor) {
 		fondo.setTexture(Texturas[valor]);
 	}
 	
+}
+
+Sprite Fondo::getSprite(){
+	return fondo;
 }

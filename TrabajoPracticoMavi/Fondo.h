@@ -20,9 +20,7 @@ private:
 public:
 	Fondo();
 
-	Sprite getSprite() {
-		return fondo;
-	}
+	Sprite getSprite();
 
 	void MeterAlArray();
 
