@@ -145,9 +145,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Boton.cpp" />
     <ClCompile Include="Fondo.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Mira.cpp" />
+    <ClCompile Include="Musica.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\mira.png" />
@@ -159,8 +162,18 @@
     <Image Include="Assets\saloonV4.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Boton.h" />
     <ClInclude Include="Fondo.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Mira.h" />
+    <ClInclude Include="Musica.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\cancionVaquera.wav" />
+    <Media Include="Assets\disparo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\upheavtt.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

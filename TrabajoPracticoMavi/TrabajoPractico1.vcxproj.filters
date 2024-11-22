@@ -27,6 +27,15 @@
     <ClCompile Include="Mira.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Musica.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Boton.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\saloonV4.png">
@@ -58,5 +67,27 @@
     <ClInclude Include="Mira.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Musica.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Boton.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\cancionVaquera.wav">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Media>
+    <Media Include="Assets\disparo.wav">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\upheavtt.ttf">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Font>
   </ItemGroup>
 </Project>

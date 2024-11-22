@@ -1,5 +1,5 @@
 #include "Mira.h"
-
+#include <SFML/Graphics.hpp>
 
 using namespace sf;
 
@@ -15,4 +15,8 @@ void Mira::MoverMira(Window &App) {
 
 Sprite Mira::ObtenerMira() {
 	return mira;
+}
+
+void Mira::Disparar() {
+	d1.playdisparo();
 }
