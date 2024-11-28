@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Villano.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Rehen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Entidad.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Entidad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Villano.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Musica.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Musica.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E640721-D116-48DC-B732-194B0766837B}|TrabajoPractico1.vcxproj|solutionrelative:Rehen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +46,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Musica.h",
-              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.h",
-              "RelativeDocumentMoniker": "Musica.h",
-              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.h",
-              "RelativeToolTip": "Musica.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-22T02:39:53.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Musica.cpp",
-              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.cpp",
-              "RelativeDocumentMoniker": "Musica.cpp",
-              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Musica.cpp",
-              "RelativeToolTip": "Musica.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T02:39:45.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Boton.cpp",
-              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Boton.cpp",
-              "RelativeDocumentMoniker": "Boton.cpp",
-              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Boton.cpp",
-              "RelativeToolTip": "Boton.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABQAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-21T23:45:34.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Menu.cpp",
               "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Menu.cpp",
               "RelativeDocumentMoniker": "Menu.cpp",
               "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Menu.cpp",
               "RelativeToolTip": "Menu.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T01:04:54.051Z",
+              "WhenOpened": "2024-11-28T01:53:56.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Menu.h",
               "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Menu.h",
               "RelativeDocumentMoniker": "Menu.h",
               "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Menu.h",
               "RelativeToolTip": "Menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-22T01:02:30.276Z",
+              "WhenOpened": "2024-11-28T01:53:54.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rehen.h",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.h",
+              "RelativeDocumentMoniker": "Rehen.h",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.h",
+              "RelativeToolTip": "Rehen.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-28T00:26:00.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Villano.h",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.h",
+              "RelativeDocumentMoniker": "Villano.h",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.h",
+              "RelativeToolTip": "Villano.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-25T17:51:26.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Villano.cpp",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.cpp",
+              "RelativeDocumentMoniker": "Villano.cpp",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Villano.cpp",
+              "RelativeToolTip": "Villano.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-25T17:53:08.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Entidad.h",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.h",
+              "RelativeDocumentMoniker": "Entidad.h",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.h",
+              "RelativeToolTip": "Entidad.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-23T20:13:10.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Entidad.cpp",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.cpp",
+              "RelativeDocumentMoniker": "Entidad.cpp",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Entidad.cpp",
+              "RelativeToolTip": "Entidad.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T20:13:26.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Rehen.cpp",
+              "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.cpp",
+              "RelativeDocumentMoniker": "Rehen.cpp",
+              "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Rehen.cpp",
+              "RelativeToolTip": "Rehen.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-28T00:27:59.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\Operador\\Desktop\\Angel R\u00EDos\\trabajos practicos\\facultad\\mavi\\TrabajoPracticoMavi\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAAAAMBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-19T21:10:52.271Z",
               "EditorCaption": ""

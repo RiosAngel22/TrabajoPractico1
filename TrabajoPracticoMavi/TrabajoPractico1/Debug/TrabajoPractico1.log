@@ -1,2 +1,5 @@
-﻿  Menu.cpp
+﻿  Main.cpp
+C:\Users\Operador\Desktop\Angel Ríos\trabajos practicos\facultad\mavi\TrabajoPracticoMavi\Main.cpp(82,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Operador\Desktop\Angel Ríos\trabajos practicos\facultad\mavi\TrabajoPracticoMavi\Main.cpp(218,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Operador\Desktop\Angel Ríos\trabajos practicos\facultad\mavi\TrabajoPracticoMavi\Main.cpp(218,19): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   TrabajoPractico1.vcxproj -> C:\Users\Operador\Desktop\Angel Ríos\trabajos practicos\facultad\mavi\TrabajoPracticoMavi\Debug\TrabajoPractico1.exe

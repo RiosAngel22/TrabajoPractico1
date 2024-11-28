@@ -8,9 +8,11 @@ class Boton
 private:
 	Text texto;
 	RectangleShape Fondo;
+	Color ColorDefault = Color(0xbe8b56ff);
+	Color DefaultFondo = Color(0x222034ff);
 
 public:
-	Boton(String textNuevo, Vector2f Posicion, int tamaño, Color color,Font &fuente);
+	Boton(String textNuevo, Vector2f Posicion, int tamaño,Font &fuente);
 	Text getBoton();
 	RectangleShape getFondo();
 	bool EstaArribaDelMouse(Window &App);

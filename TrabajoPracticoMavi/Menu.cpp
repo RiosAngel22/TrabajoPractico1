@@ -3,34 +3,32 @@
 
 Menu::Menu(Font &Fuente){
 
-	Fondo.setSize(Vector2f(800, 600));
-	Fondo.setFillColor(Color::Black);
+	Fondo.loadFromFile("Assets/menu.png");
+	FondoSprite.setTexture(Fondo);
 
 	//configuramos el titulo
 	Texto1.setFont(Fuente);
 	
-	Texto1.setScale(1.5, 1.5);
-	Texto1.setOutlineThickness(0.5);
-	Texto1.setOutlineColor(Color::Yellow);
-	Texto1.setPosition(Vector2f(50, 100));
+	Texto1.setScale(1.3, 1.3);
+	Texto1.setPosition(Vector2f(30, 600));
 	Texto1.setString("Juego de vaqueros");
 	Texto1.setFillColor(Color::White);
 
 	//configuramos las reglas
 	Texto2.setFont(Fuente);
-	Texto2.setScale(0.5, 0.5);
-	Texto2.setPosition(Vector2f(50, 200));
-	Texto2.setString("Reglas: Disparar a los villanos, evitar a los civiles, \n si le disparar a un civil perderas puntos y 1 vida, \n consigue 10 puntos para ganar");
+	Texto2.setScale(0.8, 0.8);
+	Texto2.setPosition(Vector2f(30, 660));
+	Texto2.setString("Reglas: Disparar a los villanos,\n evitar a los civiles, \n si le disparar a un civil\n perderas puntos y 1 vida, \n consigue 10 puntos para ganar");
 
 	//usamos los pointers para crear botones
-	Iniciar = new Boton("iniciar juego", Vector2f(550, 400), 5, Color::White,Fuente);
-	ActivarSonido = new Boton("activar/desactivar sonido", Vector2f(550, 450), 5, Color::White,Fuente);
-	Cerrar = new Boton("cerrar juego", Vector2f(550, 500), 5, Color::White,Fuente);
+	Iniciar = new Boton("iniciar juego", Vector2f(405, 500), 1,Fuente);
+	ActivarSonido = new Boton("activar sonido", Vector2f(400, 530), 1,Fuente);
+	Cerrar = new Boton("cerrar juego", Vector2f(405, 560), 1,Fuente);
 }
 
 void Menu::DibujarMenu(RenderWindow &App) {
 	//usamos una funcion de dibujo con renderWindow en vez de window, para ahorrarnos dibujar tantas cosas
-	App.draw(Fondo);
+	App.draw(FondoSprite);
 
 	//dibujamos el titulo y las instrucciones
 	App.draw(Texto1);

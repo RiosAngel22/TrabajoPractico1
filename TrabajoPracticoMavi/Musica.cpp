@@ -14,7 +14,7 @@ Musica::Musica() {
 
 	cancion.setBuffer(CancionBuffer);
 	cancion.setLoop(true);
-	cancion.setVolume(15);
+	cancion.setVolume(30);
 
 	Disparo.setBuffer(disparoBuffer);
 }

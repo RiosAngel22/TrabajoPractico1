@@ -146,27 +146,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Boton.cpp" />
+    <ClCompile Include="Entidad.cpp" />
     <ClCompile Include="Fondo.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Mira.cpp" />
     <ClCompile Include="Musica.cpp" />
+    <ClCompile Include="Rehen.cpp" />
+    <ClCompile Include="Villano.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\menu.png" />
     <Image Include="Assets\mira.png" />
+    <Image Include="Assets\rehen.png" />
     <Image Include="Assets\saloon.png" />
     <Image Include="Assets\saloonPuerta.png" />
     <Image Include="Assets\saloonV1.png" />
     <Image Include="Assets\saloonV2.png" />
     <Image Include="Assets\saloonV3.png" />
     <Image Include="Assets\saloonV4.png" />
+    <Image Include="Assets\Villano.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boton.h" />
+    <ClInclude Include="Entidad.h" />
     <ClInclude Include="Fondo.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Mira.h" />
     <ClInclude Include="Musica.h" />
+    <ClInclude Include="Rehen.h" />
+    <ClInclude Include="Villano.h" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="Assets\cancionVaquera.wav" />
