@@ -56,9 +56,9 @@ int dibujadoActual;
 
 int timer = 3000;
 
+//funcion para decidir quien aparece
 int decidirPersonaje() {
 	int valor = rand() % 3 +1 ;
-	cout << valor;
 	return valor;
 }
 
@@ -142,11 +142,14 @@ int main()
 						menuActivo = true;
 						//reiniciamos el juego
 						valor = 0;
+						vidas = 3;
+
 						f1.CambiarTextura(0);
 						e1.setVisibilidad(false);
 						e1.reiniciarTimer();
 						e2.setVisibilidad(false);
 						e2.reiniciarTimer();
+						
 					}
 					//-------------------------------------------------------------------
 
@@ -155,7 +158,6 @@ int main()
 						if (e1.getVisibilidad()) {
 
 							//si le disparar a un enemigo, aumentamos su punto, randomizamos su posicion, lo escondemos y cerramos las ventanas
-							cout << "villano disparado";
 							valor++;
 							random = rand() % 5;
 							e1.setVisibilidad(false);
@@ -166,7 +168,6 @@ int main()
 					}
 					if (e2.detectarColision(m1.ObtenerMira())) {
 						if (e2.getVisibilidad()) {
-							cout << "civil disparado";
 							vidas--;
 							random = rand() % 5;
 							e2.setVisibilidad(false);
