@@ -262,6 +262,8 @@ int main()
 				}
 				
 				if (e1.TimerTerminado()) {
+					e1.Disparo();
+					vidas--;
 					dibujadoActual = decidirPersonaje();
 					e1.setVisibilidad(false);
 					e1.reiniciarTimer();
