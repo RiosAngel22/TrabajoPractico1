@@ -4,14 +4,19 @@
 
 using namespace sf;
 
-Boton::Boton(String textNuevo, Vector2f Posicion,int tamaño,Font &fuente) {
+Boton::Boton(String textNuevo, Vector2f Posicion,int tamaño,Font &fuente,Color colorprimario,Color colorsecundario) {
+	ColorDefault = colorprimario;
+	DefaultFondo = colorsecundario;
+	texto.setFillColor(DefaultFondo);
+	Fondo.setFillColor(DefaultFondo);
+
 	//cargamos texto
 	texto.setFont(fuente);
 
 	//ingresamos el texto del input
 	texto.setString(textNuevo);
 	texto.setPosition(Posicion.x, Posicion.y);
-	texto.setFillColor(DefaultFondo);
+	
 	//width/2 y height/2 nos dan el centro absoluto
 	texto.setOrigin(texto.getLocalBounds().width / 2, texto.getGlobalBounds().height / 2);
 
@@ -22,7 +27,7 @@ Boton::Boton(String textNuevo, Vector2f Posicion,int tamaño,Font &fuente) {
 
 	//el fondo usa los global bounds del texto multiplicados por 1.5 y 2 respectivamente
 	Fondo.setSize(Vector2f(texto.getGlobalBounds().width * 1.3,texto.getGlobalBounds().height * 1.5));
-	Fondo.setFillColor(DefaultFondo);
+	
 }
 
 Text Boton::getBoton() {

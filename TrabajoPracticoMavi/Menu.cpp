@@ -21,9 +21,9 @@ Menu::Menu(Font &Fuente){
 	Texto2.setString("Reglas: Disparar a los villanos,\n evitar a los civiles, \n si le disparar a un civil\n perderas puntos y 1 vida, \n consigue 10 puntos para ganar");
 
 	//usamos los pointers para crear botones
-	Iniciar = new Boton("iniciar juego", Vector2f(405, 500), 1,Fuente);
-	ActivarSonido = new Boton("activar sonido", Vector2f(400, 530), 1,Fuente);
-	Cerrar = new Boton("cerrar juego", Vector2f(405, 560), 1,Fuente);
+	Iniciar = new Boton("iniciar juego", Vector2f(405, 500), 1,Fuente, Color(0xbe8b56ff), Color(0x222034ff));
+	ActivarSonido = new Boton("activar sonido", Vector2f(400, 530), 1,Fuente, Color(0xbe8b56ff), Color(0x222034ff));
+	Cerrar = new Boton("cerrar juego", Vector2f(405, 560), 1,Fuente, Color(0xbe8b56ff), Color(0x222034ff));
 }
 
 void Menu::DibujarMenu(RenderWindow &App) {

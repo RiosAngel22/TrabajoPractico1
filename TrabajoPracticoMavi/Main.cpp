@@ -4,17 +4,21 @@
 #include <SFML/Audio.hpp>
 #include <stdlib.h>
 #include <time.h>
+#include <iostream>
 
-
+//utilidades
 #include "Fondo.h"
 #include "Mira.h"
 #include "Musica.h"
 #include "Boton.h"
 #include "Menu.h"
+#include "PantallaFinal.h"
+
+//personajes
 #include "villano.h"
 #include "Rehen.h"
 
-#include <iostream>
+
 
 /////Variables//////
 using namespace sf;
@@ -27,6 +31,7 @@ int ancho;
 //puntos
 int valor = 0;
 int vidas = 3;
+int vidasCivilesPerdidas;
 
 bool musica = true;
 
@@ -35,33 +40,47 @@ Fondo f1;
 Mira m1;
 Musica c1;
 
+
+//interfaz de usuario
 Text texto;
 String textoString;
 Font fuente;
-
-
 Boton* b1;
 Menu* m2;
+PantallaFinal* p1;
 bool menuActivo = true;
+bool pantallaFinalActiva;
 
-Texture* texturaChica;
-Texture* texturaGrande;
-
+//personajes
 Villano e1;
 Rehen e2;
 
+//posicion aleatoria
 int random;
 
+//personaje actual
 int dibujadoActual;
 
-int timer = 3000;
+//tiempo sin mostrar un personaje
+int timer = 2000;
 
-//funcion para decidir quien aparece
 int decidirPersonaje() {
 	int valor = rand() % 3 +1 ;
 	return valor;
 }
 
+void reiniciarPartida() {
+	//reiniciamos el juego
+	valor = 0;
+	vidas = 3;
+
+
+	f1.CambiarTextura(0);
+	e1.setVisibilidad(false);
+	e1.reiniciarTimer();
+	e2.setVisibilidad(false);
+	e2.reiniciarTimer();
+}
 
 int main()
 {	
@@ -74,9 +93,9 @@ int main()
 
 	texto.setFont(fuente);
 
-	b1 = new Boton("regresar", Vector2f(120, 30), 4, fuente);
+	b1 = new Boton("regresar", Vector2f(120, 30), 4, fuente,Color::White,Color::Black);
 	m2 = new Menu(fuente);
-	
+	p1 = new PantallaFinal(fuente);
 
 	//creamos y aleatorizamos posicion
 	srand(time(NULL));
@@ -137,27 +156,27 @@ int main()
 							App.close();
 						}
 					}
-					if (b1->EstaArribaDelMouse(App)) {
-						//volvemos al menu
-						menuActivo = true;
-						//reiniciamos el juego
-						valor = 0;
-						vidas = 3;
-
-						f1.CambiarTextura(0);
-						e1.setVisibilidad(false);
-						e1.reiniciarTimer();
-						e2.setVisibilidad(false);
-						e2.reiniciarTimer();
-						
-					}
 					//-------------------------------------------------------------------
 
-						//chequeamos colisiones y reiniciamos posicion
+					//boton de regreso al menu
+					if (pantallaFinalActiva) {
+						if (p1->regresoPrecionado(App)) {
+							reiniciarPartida();
+							pantallaFinalActiva = false;
+						}
+					}
+					
+					//boton de regreso al juego
+					if (b1->EstaArribaDelMouse(App)) {
+						reiniciarPartida();
+						menuActivo = true;
+					}
+					
+					//chequeamos colisiones y reiniciamos posicion
 					if (e1.detectarColision(m1.ObtenerMira())) {
 						if (e1.getVisibilidad()) {
 
-							//si le disparar a un enemigo, aumentamos su punto, randomizamos su posicion, lo escondemos y cerramos las ventanas
+							//si le disparar a un enemigo, aumentamos su punto, randomizamos su posicion, lo escondemos
 							valor++;
 							random = rand() % 5;
 							e1.setVisibilidad(false);
@@ -168,10 +187,12 @@ int main()
 					}
 					if (e2.detectarColision(m1.ObtenerMira())) {
 						if (e2.getVisibilidad()) {
+							//si le disparamos a la rehen, perdemos una vida, randomizamos su posicion, y la escondemos
 							vidas--;
 							random = rand() % 5;
 							e2.setVisibilidad(false);
 							e2.reiniciarTimer();
+							vidasCivilesPerdidas++;
 
 							dibujadoActual = decidirPersonaje();
 						}
@@ -188,16 +209,19 @@ int main()
 
 
 			case::Event::MouseMoved:
-				//si el menu esta activo, el menu tiene effecto al hacer hover, sino, el boton de regreso lo tiene
+				//si el menu esta activo,los botones tienen effecto al hacer hover
 				if (menuActivo) {
 					m2->EfectoHover(App);
+				}
+				else if (pantallaFinalActiva) {
+					p1->efectoHover(App);
 				}
 				else {
 					b1->EfectoHover(App);
 				}
 
 				//si estamos jugando, escondemos el mouse, si no, lo mostramos
-				if (menuActivo) {
+				if ((menuActivo) or (pantallaFinalActiva)){
 					App.setMouseCursorVisible(true);
 				}
 				else if (!menuActivo) {
@@ -214,11 +238,23 @@ int main()
 			//movemos el mouse
 			m1.MoverMira(App);
 
-
+			//cargamos el texto de la interfaz
 			texto.setString(textoString);
 			texto.setScale(1.1, 1.1);
 			texto.setPosition(30, 650);
-			textoString = "puntaje actual: "+ to_string(valor)+"\n vidas actuales: "+ to_string(vidas);
+			textoString = "puntaje actual: "+ to_string(valor)+"\n vidas actuales: "+ to_string(vidas)+"\n Trabajo MAVI";
+
+			if ((valor >= 10) or (vidas <= 0)) {
+				pantallaFinalActiva = true;
+				if (valor >= 10) {
+					p1->setVictoria(true);
+				}
+				else if (vidas <= 0) {
+					p1->setVictoria(false);
+				}
+			}
+
+			p1->setTexto("enemigos eliminados:   \n" + to_string(valor) + "\n vidas civiles perdidas:   \n" + to_string(vidasCivilesPerdidas));
 
 			App.clear();
 
@@ -226,11 +262,15 @@ int main()
 			if (menuActivo) {
 				m2->DibujarMenu(App);
 			}
+			else if (pantallaFinalActiva) {
+				p1->DibujarPantalla(App);
+			}
 			else {
 				
 				switch (dibujadoActual)
 				{
 					case 1:
+						//Ocultamos al enemigo, mostramos al rehen y lo movemos, reducimos su timer y abrimos su ventana
 						e2.setVisibilidad(false);
 						e2.reiniciarTimer();
 
@@ -244,6 +284,7 @@ int main()
 						break;
 
 					case 2:
+						//Ocultamos al rehen, mostramos al enemigo y lo movemos, reducimos su timer y abrimos su ventana
 						e1.setVisibilidad(false);
 						e1.reiniciarTimer();
 
@@ -255,6 +296,7 @@ int main()
 
 						break;
 					case 3:
+						//ocultamos a ambos
 						f1.CambiarTextura(0);
 						e1.setVisibilidad(false);
 						e2.setVisibilidad(false);
@@ -294,6 +336,7 @@ int main()
 
 				//Dibujamos puntos
 				App.draw(texto);
+
 			}
 
 			App.display();
