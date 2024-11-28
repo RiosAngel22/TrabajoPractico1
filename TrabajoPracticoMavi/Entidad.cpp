@@ -16,6 +16,7 @@ Sprite Entidad::getPersonaje() {
 }
 
 bool Entidad::detectarColision(Sprite mouseSprite) {
+	//informa si el disparo impacto contra el sprite
 	FloatRect colision = Personaje.getGlobalBounds();
 	if (colision.contains(mouseSprite.getPosition())) {
 		return true;

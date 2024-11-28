@@ -8,17 +8,17 @@ Menu::Menu(Font &Fuente){
 
 	//configuramos el titulo
 	Texto1.setFont(Fuente);
-	
 	Texto1.setScale(1.3, 1.3);
 	Texto1.setPosition(Vector2f(30, 600));
-	Texto1.setString("Juego de vaqueros");
-	Texto1.setFillColor(Color::White);
+	Texto1.setString("El deber de un sheriff");
+	Texto1.setFillColor(Color(0xbe8b56ff));
 
 	//configuramos las reglas
 	Texto2.setFont(Fuente);
 	Texto2.setScale(0.8, 0.8);
 	Texto2.setPosition(Vector2f(30, 660));
 	Texto2.setString("Reglas: Disparar a los villanos,\n evitar a los civiles, \n si le disparar a un civil\n perderas puntos y 1 vida, \n consigue 10 puntos para ganar");
+	Texto2.setFillColor(Color(0xbe8b56ff));
 
 	//usamos los pointers para crear botones
 	Iniciar = new Boton("iniciar juego", Vector2f(405, 500), 1,Fuente, Color(0xbe8b56ff), Color(0x222034ff));
@@ -51,6 +51,7 @@ void Menu::DibujarMenu(RenderWindow &App) {
 }
 
 void Menu::EfectoHover(Window &app) {
+	//Activamos los efectos hover en conjunto
 	Iniciar->EfectoHover(app);
 	ActivarSonido->EfectoHover(app);
 	Cerrar->EfectoHover(app);

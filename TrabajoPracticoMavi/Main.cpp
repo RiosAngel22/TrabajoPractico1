@@ -32,6 +32,7 @@ int ancho;
 int valor = 0;
 int vidas = 3;
 int vidasCivilesPerdidas;
+int puntajeFinal;
 
 bool musica = true;
 
@@ -51,6 +52,9 @@ PantallaFinal* p1;
 bool menuActivo = true;
 bool pantallaFinalActiva;
 
+//sin esta variable, la melodia de victoria o derrota se repite infinitamente
+bool melodiaFinalSonando = false;
+
 //personajes
 Villano e1;
 Rehen e2;
@@ -62,24 +66,29 @@ int random;
 int dibujadoActual;
 
 //tiempo sin mostrar un personaje
-int timer = 2000;
+int timer = 1000;
 
+//decide el siguiente personaje en aparecer
 int decidirPersonaje() {
 	int valor = rand() % 3 +1 ;
 	return valor;
 }
 
+//restablecemos todos los valores
 void reiniciarPartida() {
 	//reiniciamos el juego
 	valor = 0;
 	vidas = 3;
-
+	vidasCivilesPerdidas = 0;
+	puntajeFinal = 0;
 
 	f1.CambiarTextura(0);
 	e1.setVisibilidad(false);
 	e1.reiniciarTimer();
 	e2.setVisibilidad(false);
 	e2.reiniciarTimer();
+	melodiaFinalSonando = false;
+
 }
 
 int main()
@@ -116,7 +125,9 @@ int main()
 
 
 	//Creamos la ventana
-	RenderWindow App(VideoMode(800, 800, 32), "Juego de vaqueros");
+
+	//style close inpide que el usuario agrande la pantalla
+	RenderWindow App(VideoMode(800, 800, 32), "El deber de un sheriff - Angel Rios",Style::Close);
 
 	while (App.isOpen())
 	{
@@ -124,6 +135,7 @@ int main()
 		while (App.pollEvent(evt)) {
 			switch (evt.type)
 			{
+
 			case::Event::Closed:
 				App.close();
 
@@ -163,6 +175,7 @@ int main()
 						if (p1->regresoPrecionado(App)) {
 							reiniciarPartida();
 							pantallaFinalActiva = false;
+							c1.playCancion();
 						}
 					}
 					
@@ -176,22 +189,27 @@ int main()
 					if (e1.detectarColision(m1.ObtenerMira())) {
 						if (e1.getVisibilidad()) {
 
-							//si le disparar a un enemigo, aumentamos su punto, randomizamos su posicion, lo escondemos
+							//si le disparar a un enemigo, aumentamos su punto, randomizamos su posicion, lo escondemos y suena un sonido feliz
 							valor++;
 							random = rand() % 5;
 							e1.setVisibilidad(false);
 							e1.reiniciarTimer();
+							if (musica) {
+								e1.DisparoAVillano();
+							}
+							
 
 							dibujadoActual = decidirPersonaje();
 						}
 					}
 					if (e2.detectarColision(m1.ObtenerMira())) {
 						if (e2.getVisibilidad()) {
-							//si le disparamos a la rehen, perdemos una vida, randomizamos su posicion, y la escondemos
+							//si le disparamos a la rehen, perdemos una vida, randomizamos su posicion, la escondemos y suena un sonido dolorozo 
 							vidas--;
 							random = rand() % 5;
 							e2.setVisibilidad(false);
 							e2.reiniciarTimer();
+
 							vidasCivilesPerdidas++;
 
 							dibujadoActual = decidirPersonaje();
@@ -241,20 +259,39 @@ int main()
 			//cargamos el texto de la interfaz
 			texto.setString(textoString);
 			texto.setScale(1.1, 1.1);
+			texto.setFillColor(Color(0xbe8b56ff));
 			texto.setPosition(30, 650);
 			textoString = "puntaje actual: "+ to_string(valor)+"\n vidas actuales: "+ to_string(vidas)+"\n Trabajo MAVI";
 
+			//aparecemos la pantalla final y tocamos una melodia correspondiente
 			if ((valor >= 10) or (vidas <= 0)) {
+
 				pantallaFinalActiva = true;
+				puntajeFinal = valor - (vidasCivilesPerdidas * 2);
+				
+				c1.StopCancion();
 				if (valor >= 10) {
 					p1->setVictoria(true);
+
+					//usamos la variable melodia sonando para evitar repeticion
+					if ((!melodiaFinalSonando) and (musica)) {
+						c1.playVictoria();
+						melodiaFinalSonando = true;
+					}
+					
 				}
 				else if (vidas <= 0) {
 					p1->setVictoria(false);
+					if ((!melodiaFinalSonando) and (musica)) {
+						c1.playDerrota();
+						melodiaFinalSonando = true;
+					}
 				}
 			}
 
-			p1->setTexto("enemigos eliminados:   \n" + to_string(valor) + "\n vidas civiles perdidas:   \n" + to_string(vidasCivilesPerdidas));
+
+
+			p1->setTexto("enemigos eliminados:   \n  " + to_string(valor) + "\n vidas civiles perdidas:   \n  " + to_string(vidasCivilesPerdidas) +"\n puntaje final : \n  " + to_string(puntajeFinal));
 
 			App.clear();
 
@@ -305,25 +342,29 @@ int main()
 				}
 				
 				if (e1.TimerTerminado()) {
+					//si el enemigo espera lo suficiente, nos dispara y hacemos un ruido de dolor
 					e1.Disparo();
 					vidas--;
+
+					//quitamos al enemigo
 					dibujadoActual = decidirPersonaje();
 					e1.setVisibilidad(false);
 					e1.reiniciarTimer();
 					random = rand() % 5;
 				}
 				if (e2.TimerTerminado()) {
+					//si la rehen espera lo suficiente, se esconde
 					dibujadoActual = decidirPersonaje();
 					e2.setVisibilidad(false);
 					e2.reiniciarTimer();
 					random = rand() % 5;
 				}
 				if (timer == 0) {
-					timer = 3000;
+					timer = 1000;
 					dibujadoActual = decidirPersonaje();
 				}
 
-
+				//dibujamos el fondo
 				App.draw(f1.getSprite());
 				
 

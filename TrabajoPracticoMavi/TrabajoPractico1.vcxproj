@@ -182,8 +182,11 @@
     <ClInclude Include="Villano.h" />
   </ItemGroup>
   <ItemGroup>
+    <Media Include="Assets\CancionDerrota.wav" />
     <Media Include="Assets\cancionVaquera.wav" />
+    <Media Include="Assets\CancionVictoria.wav" />
     <Media Include="Assets\disparo.wav" />
+    <Media Include="Assets\ping.wav" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\upheavtt.ttf" />

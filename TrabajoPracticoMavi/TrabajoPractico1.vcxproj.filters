@@ -123,6 +123,15 @@
     <Media Include="Assets\disparo.wav">
       <Filter>Archivos de recursos\assets</Filter>
     </Media>
+    <Media Include="Assets\ping.wav">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Media>
+    <Media Include="Assets\CancionDerrota.wav">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Media>
+    <Media Include="Assets\CancionVictoria.wav">
+      <Filter>Archivos de recursos\assets</Filter>
+    </Media>
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\upheavtt.ttf">

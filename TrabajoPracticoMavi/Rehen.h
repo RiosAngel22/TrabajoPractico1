@@ -14,6 +14,5 @@ private:
 
 public:
 	Rehen();
-	void Gritar();
 };
 

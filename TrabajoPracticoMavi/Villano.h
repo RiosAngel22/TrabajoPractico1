@@ -18,5 +18,6 @@ private:
 public:
 	Villano();
 	void Disparo();
+	void DisparoAVillano();
 };
 
